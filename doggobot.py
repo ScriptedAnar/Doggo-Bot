@@ -13,20 +13,14 @@ reddit = asyncpraw.Reddit(client_id='insertclientid',
                           client_secret='insertclientsecret',
                           user_agent='insertuseragent')
 
-# This is for the list of individuals in the list to receive kitten images.
-user_ids = []
-
-list_of_commands = {}
 
 @bot.command()
-# If you want to pet the kitten bot
 async def pet(ctx):
     await ctx.channel.send("https://tenor.com/view/doggo-petting-pet-nuzzle-dog-gif-7701760")
     await ctx.channel.send("Thanks for petting me! Now do it again. Now. ")
 
 
 @bot.command()
-# If you want to pet the kitten bot
 async def sleep(ctx):
     randomNumber = random.randint(1, 2)
     if randomNumber == 1:
@@ -37,12 +31,10 @@ async def sleep(ctx):
 
 
 @bot.command()
-# If you want to pet the kitten bot
 async def play(ctx):
     await ctx.channel.send("Let's go outside and throw sticks around! It'll be fun.")
 
 @bot.command()
-# If you want to pet the kitten bot
 async def doatrick(ctx):
     randomTrick = random.randint(1, 3)
     if randomTrick == 1:
@@ -57,7 +49,6 @@ async def doatrick(ctx):
 
 
 @bot.command()
-# If you want to pet the kitten bot
 async def treat(ctx):
     await ctx.channel.send("https://tenor.com/view/dog-treat-snack-scooby-gif-12847347")
     await ctx.channel.send("Ooo a treat! Thank you! Another one.")
